@@ -67,7 +67,9 @@ console.log(reviews[reviews.length -1])//this is a test.
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 
+reviews[reviews.length-2].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 
+console.log(reviews[reviews.length-2])//this is a test.
 
 
 
