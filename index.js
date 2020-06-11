@@ -61,9 +61,15 @@ const reviews = [{ name: "Daniela", rating: 5, feedback: "Beautiful atmosphere a
 console.log(reviews[5].feedback)
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
+reviews.push({name: "sami", rating: 0.5, feedback: "A very good example of a very bad restaurant!" })
+
+console.log(reviews[reviews.length -1])//this is a test.
+
+/* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 
 
-/* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+
+
 
 /*  Task 7: Write a function to return a review based on the index of the review in the array.
 
