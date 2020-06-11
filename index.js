@@ -145,10 +145,16 @@ and should return an array of objects.
     {name: "Brett", rating: 3, feedback: "great selection of snacks and a nice cafe area to get work done during the day."},
     {name: "Julius", rating: 2, feedback: "I was largely unimpressed by this venue. Nothing special on the menu and too expensive. The atmosphere is polarizing, and not for me, but I think some would like it." }]
 */
-function getLongReviews(/* code here */) {
-  /* code here */
+function getLongReviews(array) {
+  let longReviews = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].feedback.split(" ").length > 15){
+      longReviews.push(array[i]);
+    }
+  }
+  return longReviews;
 }
-
+console.log(getLongReviews(reviews))
 
 /* STRETCH 3:  This challenge is not related to the data above! 
 
