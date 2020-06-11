@@ -69,7 +69,7 @@ console.log(reviews[reviews.length -1])//this is a test.
 
 reviews[reviews.length-2].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 
-console.log(reviews[reviews.length-2])//this is a test.
+console.log(reviews[reviews.length-2]);//this is a test.
 
 
 
@@ -86,9 +86,10 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
 function getReviewByIndex(reviews, index) {
-  /* code here */
+  
+  return `${reviews[index].name} gave the restaurant a ${reviews[index].rating}, and their feedback was: ${reviews[index].feedback}`
 }
-
+console.log(getReviewByIndex(reviews, 0));//this is a test.
 
 /* Task 8: Write a function to get information about the most recent review called `getLastReview`
 
